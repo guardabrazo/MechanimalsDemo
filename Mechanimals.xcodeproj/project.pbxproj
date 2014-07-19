@@ -19,6 +19,8 @@
 		EF9B2B631979883F00D0D269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B4B1979883F00D0D269 /* UIKit.framework */; };
 		EF9B2B6B1979883F00D0D269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF9B2B691979883F00D0D269 /* InfoPlist.strings */; };
 		EF9B2B6D1979883F00D0D269 /* MechanimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9B2B6C1979883F00D0D269 /* MechanimalsTests.m */; };
+		EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */; };
+		EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		EF9B2B681979883F00D0D269 /* MechanimalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MechanimalsTests-Info.plist"; sourceTree = "<group>"; };
 		EF9B2B6A1979883F00D0D269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF9B2B6C1979883F00D0D269 /* MechanimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MechanimalsTests.m; sourceTree = "<group>"; };
+		EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZStartScreenViewController.h; sourceTree = "<group>"; };
+		EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZStartScreenViewController.m; sourceTree = "<group>"; };
+		EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZStartScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 			children = (
 				EF9B2B561979883F00D0D269 /* GBZAppDelegate.h */,
 				EF9B2B571979883F00D0D269 /* GBZAppDelegate.m */,
+				EFA1F849197A946700BF87CE /* Controllers */,
 				EF9B2B591979883F00D0D269 /* Images.xcassets */,
 				EF9B2B4E1979883F00D0D269 /* Supporting Files */,
 			);
@@ -142,6 +148,16 @@
 				EF9B2B691979883F00D0D269 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFA1F849197A946700BF87CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */,
+				EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */,
+				EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */,
 				EF9B2B521979883F00D0D269 /* InfoPlist.strings in Resources */,
 				EF9B2B5A1979883F00D0D269 /* Images.xcassets in Resources */,
 			);
@@ -242,6 +259,7 @@
 			files = (
 				EF9B2B581979883F00D0D269 /* GBZAppDelegate.m in Sources */,
 				EF9B2B541979883F00D0D269 /* main.m in Sources */,
+				EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +458,7 @@
 				EF9B2B721979883F00D0D269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF9B2B731979883F00D0D269 /* Build configuration list for PBXNativeTarget "MechanimalsTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +467,7 @@
 				EF9B2B751979883F00D0D269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
