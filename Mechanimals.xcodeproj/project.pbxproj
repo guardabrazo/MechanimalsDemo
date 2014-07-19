@@ -19,8 +19,10 @@
 		EF9B2B631979883F00D0D269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B4B1979883F00D0D269 /* UIKit.framework */; };
 		EF9B2B6B1979883F00D0D269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF9B2B691979883F00D0D269 /* InfoPlist.strings */; };
 		EF9B2B6D1979883F00D0D269 /* MechanimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9B2B6C1979883F00D0D269 /* MechanimalsTests.m */; };
+		EFA12A41197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12A40197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m */; };
 		EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */; };
 		EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */; };
+		EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F84B197A94F700BF87CE /* GBZGearView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +52,13 @@
 		EF9B2B681979883F00D0D269 /* MechanimalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MechanimalsTests-Info.plist"; sourceTree = "<group>"; };
 		EF9B2B6A1979883F00D0D269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF9B2B6C1979883F00D0D269 /* MechanimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MechanimalsTests.m; sourceTree = "<group>"; };
+		EFA12A3F197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZOneFingerRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		EFA12A40197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZOneFingerRotationGestureRecognizer.m; sourceTree = "<group>"; };
 		EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZStartScreenViewController.h; sourceTree = "<group>"; };
 		EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZStartScreenViewController.m; sourceTree = "<group>"; };
 		EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZStartScreenViewController.xib; sourceTree = "<group>"; };
+		EFA1F84A197A94F700BF87CE /* GBZGearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZGearView.h; sourceTree = "<group>"; };
+		EFA1F84B197A94F700BF87CE /* GBZGearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZGearView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 				EF9B2B561979883F00D0D269 /* GBZAppDelegate.h */,
 				EF9B2B571979883F00D0D269 /* GBZAppDelegate.m */,
 				EFA1F849197A946700BF87CE /* Controllers */,
+				EFA1F84D197A950300BF87CE /* Views */,
+				EFA12A42197ADC6800E04030 /* Utils */,
 				EF9B2B591979883F00D0D269 /* Images.xcassets */,
 				EF9B2B4E1979883F00D0D269 /* Supporting Files */,
 			);
@@ -150,6 +158,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EFA12A42197ADC6800E04030 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12A3F197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.h */,
+				EFA12A40197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		EFA1F849197A946700BF87CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +175,15 @@
 				EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EFA1F84D197A950300BF87CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFA1F84A197A94F700BF87CE /* GBZGearView.h */,
+				EFA1F84B197A94F700BF87CE /* GBZGearView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA12A41197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m in Sources */,
 				EF9B2B581979883F00D0D269 /* GBZAppDelegate.m in Sources */,
+				EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */,
 				EF9B2B541979883F00D0D269 /* main.m in Sources */,
 				EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */,
 			);

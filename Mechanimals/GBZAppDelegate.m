@@ -7,6 +7,7 @@
 //
 
 #import "GBZAppDelegate.h"
+#import "GBZStartScreenViewController.h"
 
 @implementation GBZAppDelegate
 
@@ -14,6 +15,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    GBZStartScreenViewController *startScreenVC = [[GBZStartScreenViewController alloc]init];
+    self.window.rootViewController = startScreenVC;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
