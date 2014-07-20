@@ -20,6 +20,11 @@
 		EF9B2B6B1979883F00D0D269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF9B2B691979883F00D0D269 /* InfoPlist.strings */; };
 		EF9B2B6D1979883F00D0D269 /* MechanimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9B2B6C1979883F00D0D269 /* MechanimalsTests.m */; };
 		EFA12A41197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12A40197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m */; };
+		EFA12A45197AED2E00E04030 /* GBZGravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12A44197AED2E00E04030 /* GBZGravityView.m */; };
+		EFA12A48197AF72100E04030 /* Arvo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A46197AF72100E04030 /* Arvo-Bold.ttf */; };
+		EFA12A49197AF72100E04030 /* Arvo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A47197AF72100E04030 /* Arvo-Regular.ttf */; };
+		EFA12A4D197AF7D500E04030 /* PT Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A4B197AF7D500E04030 /* PT Sans-Bold.ttf */; };
+		EFA12A4E197AF7D500E04030 /* PT Sans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A4C197AF7D500E04030 /* PT Sans-Regular.ttf */; };
 		EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */; };
 		EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */; };
 		EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F84B197A94F700BF87CE /* GBZGearView.m */; };
@@ -54,6 +59,12 @@
 		EF9B2B6C1979883F00D0D269 /* MechanimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MechanimalsTests.m; sourceTree = "<group>"; };
 		EFA12A3F197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZOneFingerRotationGestureRecognizer.h; sourceTree = "<group>"; };
 		EFA12A40197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZOneFingerRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		EFA12A43197AED2E00E04030 /* GBZGravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZGravityView.h; sourceTree = "<group>"; };
+		EFA12A44197AED2E00E04030 /* GBZGravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZGravityView.m; sourceTree = "<group>"; };
+		EFA12A46197AF72100E04030 /* Arvo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Bold.ttf"; sourceTree = "<group>"; };
+		EFA12A47197AF72100E04030 /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Regular.ttf"; sourceTree = "<group>"; };
+		EFA12A4B197AF7D500E04030 /* PT Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans-Bold.ttf"; sourceTree = "<group>"; };
+		EFA12A4C197AF7D500E04030 /* PT Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans-Regular.ttf"; sourceTree = "<group>"; };
 		EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZStartScreenViewController.h; sourceTree = "<group>"; };
 		EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZStartScreenViewController.m; sourceTree = "<group>"; };
 		EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZStartScreenViewController.xib; sourceTree = "<group>"; };
@@ -123,6 +134,7 @@
 				EFA1F849197A946700BF87CE /* Controllers */,
 				EFA1F84D197A950300BF87CE /* Views */,
 				EFA12A42197ADC6800E04030 /* Utils */,
+				EFA12A4A197AF72700E04030 /* Fonts */,
 				EF9B2B591979883F00D0D269 /* Images.xcassets */,
 				EF9B2B4E1979883F00D0D269 /* Supporting Files */,
 			);
@@ -167,6 +179,17 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		EFA12A4A197AF72700E04030 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12A46197AF72100E04030 /* Arvo-Bold.ttf */,
+				EFA12A47197AF72100E04030 /* Arvo-Regular.ttf */,
+				EFA12A4B197AF7D500E04030 /* PT Sans-Bold.ttf */,
+				EFA12A4C197AF7D500E04030 /* PT Sans-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		EFA1F849197A946700BF87CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +205,8 @@
 			children = (
 				EFA1F84A197A94F700BF87CE /* GBZGearView.h */,
 				EFA1F84B197A94F700BF87CE /* GBZGearView.m */,
+				EFA12A43197AED2E00E04030 /* GBZGravityView.h */,
+				EFA12A44197AED2E00E04030 /* GBZGravityView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -263,8 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */,
+				EFA12A49197AF72100E04030 /* Arvo-Regular.ttf in Resources */,
 				EF9B2B521979883F00D0D269 /* InfoPlist.strings in Resources */,
 				EF9B2B5A1979883F00D0D269 /* Images.xcassets in Resources */,
+				EFA12A4E197AF7D500E04030 /* PT Sans-Regular.ttf in Resources */,
+				EFA12A48197AF72100E04030 /* Arvo-Bold.ttf in Resources */,
+				EFA12A4D197AF7D500E04030 /* PT Sans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +315,7 @@
 				EFA12A41197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m in Sources */,
 				EF9B2B581979883F00D0D269 /* GBZAppDelegate.m in Sources */,
 				EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */,
+				EFA12A45197AED2E00E04030 /* GBZGravityView.m in Sources */,
 				EF9B2B541979883F00D0D269 /* main.m in Sources */,
 				EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */,
 			);
