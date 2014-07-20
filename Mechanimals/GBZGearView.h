@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol GearViewDelegate <NSObject>
+
+-(void)didRotate;
+
+@end
+
 @interface GBZGearView : UIView
+
+@property (nonatomic, weak) id<GearViewDelegate> delegate;
 
 @end

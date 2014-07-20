@@ -17,7 +17,17 @@
 
 @implementation GBZGearView
 
--(id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor clearColor];
+        [self setupGestureRecognizer];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
     
     if ((self = [super initWithCoder:aDecoder])) {
         [self setupGestureRecognizer];
@@ -45,6 +55,7 @@
     
     if (self.gearAngle > 45) {
         NSLog(@"PLAY AUDIO");
+        [self.delegate didRotate];
         self.gearAngle = 0;
     }
 }
@@ -155,10 +166,10 @@
     
     CGPoint midPoint = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
     
-    CGFloat outerRadius = CGRectGetWidth(self.frame) * 0.5;
+    CGFloat outerRadius = CGRectGetWidth(self.frame) * 0.7;
     
     GBZOneFingerRotationGestureRecognizer *rotationRecognizer = [[GBZOneFingerRotationGestureRecognizer alloc] initWithMidPoint: midPoint
-                                                                                                                    innerRadius: outerRadius * 0.5
+                                                                                                                    innerRadius: outerRadius * 0.3
                                                                                                                     outerRadius: outerRadius
                                                                                                                          target: self];
     
