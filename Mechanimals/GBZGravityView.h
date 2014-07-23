@@ -10,8 +10,11 @@
 
 @interface GBZGravityView : UIView
 
+
 - (id)initWithFrame:(CGRect)frame view:(UIView *)view reversed:(BOOL)reversed;
 
 - (id)initWithFrame:(CGRect)frame view:(UIView *)view;
+
+
 
 @end

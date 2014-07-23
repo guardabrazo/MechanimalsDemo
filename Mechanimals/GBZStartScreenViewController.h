@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PdDispatcher.h"
 
-@interface GBZStartScreenViewController : UIViewController
+@interface GBZStartScreenViewController : UIViewController{
+
+PdDispatcher *dispatcher;
+void *patch;
+    
+}
 
 @end

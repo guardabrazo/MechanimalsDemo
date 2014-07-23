@@ -18,4 +18,6 @@
 
 @property (nonatomic, weak) id<GearViewDelegate> delegate;
 
+@property (weak, nonatomic) id<UICollisionBehaviorDelegate> collisionDelegate;
+
 @end

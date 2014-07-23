@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D09C4003E11A4880BD357CCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCFD314AF3457D8BEDFCCF /* libPods.a */; };
 		EF9B2B481979883F00D0D269 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B471979883F00D0D269 /* Foundation.framework */; };
 		EF9B2B4A1979883F00D0D269 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B491979883F00D0D269 /* CoreGraphics.framework */; };
 		EF9B2B4C1979883F00D0D269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B4B1979883F00D0D269 /* UIKit.framework */; };
@@ -23,8 +24,29 @@
 		EFA12A45197AED2E00E04030 /* GBZGravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12A44197AED2E00E04030 /* GBZGravityView.m */; };
 		EFA12A48197AF72100E04030 /* Arvo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A46197AF72100E04030 /* Arvo-Bold.ttf */; };
 		EFA12A49197AF72100E04030 /* Arvo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A47197AF72100E04030 /* Arvo-Regular.ttf */; };
-		EFA12A4D197AF7D500E04030 /* PT Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A4B197AF7D500E04030 /* PT Sans-Bold.ttf */; };
-		EFA12A4E197AF7D500E04030 /* PT Sans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12A4C197AF7D500E04030 /* PT Sans-Regular.ttf */; };
+		EFA12A52197BB23200E04030 /* GBZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12A50197BB23200E04030 /* GBZAboutViewController.m */; };
+		EFA12AEF197D138200E04030 /* GBZTutorial0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12AED197D138200E04030 /* GBZTutorial0ViewController.m */; };
+		EFA12AF7197D143C00E04030 /* GBZTutorial1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12AF5197D143C00E04030 /* GBZTutorial1ViewController.m */; };
+		EFA12AF8197D143C00E04030 /* GBZTutorial1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA12AF6197D143C00E04030 /* GBZTutorial1ViewController.xib */; };
+		EFA12AFF197D145900E04030 /* GBZSKStarsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12AFA197D145900E04030 /* GBZSKStarsScene.m */; };
+		EFA12B00197D145900E04030 /* GBZSpaceshipView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12AFC197D145900E04030 /* GBZSpaceshipView.m */; };
+		EFA12B01197D145900E04030 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA12AFD197D145900E04030 /* spark.png */; };
+		EFA12B02197D145900E04030 /* StarsParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = EFA12AFE197D145900E04030 /* StarsParticles.sks */; };
+		EFA12B07197D1C4700E04030 /* GBZTutorial2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B05197D1C4700E04030 /* GBZTutorial2ViewController.m */; };
+		EFA12B08197D1C4700E04030 /* GBZTutorial2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B06197D1C4700E04030 /* GBZTutorial2ViewController.xib */; };
+		EFA12B0E197D2B1E00E04030 /* GBZTutorialPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B0C197D2B1E00E04030 /* GBZTutorialPageViewController.m */; };
+		EFA12B1C197D30CC00E04030 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA12B16197D300800E04030 /* libpd-ios.a */; };
+		EFA12B20197D32B100E04030 /* randomSineWave.pd in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B1F197D32B100E04030 /* randomSineWave.pd */; };
+		EFA12B23197E464200E04030 /* GBZMutableBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B22197E464200E04030 /* GBZMutableBodyView.m */; };
+		EFA12B29197E494300E04030 /* GBZEyesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B28197E494300E04030 /* GBZEyesView.m */; };
+		EFA12B2D197E6E4400E04030 /* GBZGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B2B197E6E4400E04030 /* GBZGameViewController.m */; };
+		EFA12B2E197E6E4400E04030 /* GBZGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B2C197E6E4400E04030 /* GBZGameViewController.xib */; };
+		EFA12B30197E73FA00E04030 /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B2F197E73FA00E04030 /* fondo.png */; };
+		EFA12B33197E77E700E04030 /* fr-fal1-2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B32197E77E700E04030 /* fr-fal1-2.ttf */; };
+		EFA12B36197EE09B00E04030 /* GBZMouthView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B35197EE09B00E04030 /* GBZMouthView.m */; };
+		EFA12B39197EE12A00E04030 /* GBZMechanimalView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B38197EE12A00E04030 /* GBZMechanimalView.m */; };
+		EFA12B3D1980029100E04030 /* GBZTutorial3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B3C1980029100E04030 /* GBZTutorial3ViewController.m */; };
+		EFA12B421980047700E04030 /* GBZPlanetView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B411980047700E04030 /* GBZPlanetView.m */; };
 		EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */; };
 		EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */; };
 		EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F84B197A94F700BF87CE /* GBZGearView.m */; };
@@ -38,9 +60,32 @@
 			remoteGlobalIDString = EF9B2B431979883F00D0D269;
 			remoteInfo = Mechanimals;
 		};
+		EFA12B15197D300800E04030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFA12B10197D300700E04030 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		EFA12B17197D300800E04030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFA12B10197D300700E04030 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		EFA12B1A197D30AE00E04030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFA12B10197D300700E04030 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36BCFD314AF3457D8BEDFCCF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5219DD647344962B0270C0A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EF9B2B441979883F00D0D269 /* Mechanimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mechanimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9B2B471979883F00D0D269 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF9B2B491979883F00D0D269 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +108,43 @@
 		EFA12A44197AED2E00E04030 /* GBZGravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZGravityView.m; sourceTree = "<group>"; };
 		EFA12A46197AF72100E04030 /* Arvo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Bold.ttf"; sourceTree = "<group>"; };
 		EFA12A47197AF72100E04030 /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Regular.ttf"; sourceTree = "<group>"; };
-		EFA12A4B197AF7D500E04030 /* PT Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans-Bold.ttf"; sourceTree = "<group>"; };
-		EFA12A4C197AF7D500E04030 /* PT Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans-Regular.ttf"; sourceTree = "<group>"; };
+		EFA12A4F197BB23200E04030 /* GBZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZAboutViewController.h; sourceTree = "<group>"; };
+		EFA12A50197BB23200E04030 /* GBZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZAboutViewController.m; sourceTree = "<group>"; };
+		EFA12AEC197D138200E04030 /* GBZTutorial0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZTutorial0ViewController.h; sourceTree = "<group>"; };
+		EFA12AED197D138200E04030 /* GBZTutorial0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTutorial0ViewController.m; sourceTree = "<group>"; };
+		EFA12AF4197D143C00E04030 /* GBZTutorial1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZTutorial1ViewController.h; sourceTree = "<group>"; };
+		EFA12AF5197D143C00E04030 /* GBZTutorial1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTutorial1ViewController.m; sourceTree = "<group>"; };
+		EFA12AF6197D143C00E04030 /* GBZTutorial1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZTutorial1ViewController.xib; sourceTree = "<group>"; };
+		EFA12AF9197D145900E04030 /* GBZSKStarsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZSKStarsScene.h; sourceTree = "<group>"; };
+		EFA12AFA197D145900E04030 /* GBZSKStarsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZSKStarsScene.m; sourceTree = "<group>"; };
+		EFA12AFB197D145900E04030 /* GBZSpaceshipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZSpaceshipView.h; sourceTree = "<group>"; };
+		EFA12AFC197D145900E04030 /* GBZSpaceshipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZSpaceshipView.m; sourceTree = "<group>"; };
+		EFA12AFD197D145900E04030 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		EFA12AFE197D145900E04030 /* StarsParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarsParticles.sks; sourceTree = "<group>"; };
+		EFA12B04197D1C4700E04030 /* GBZTutorial2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZTutorial2ViewController.h; sourceTree = "<group>"; };
+		EFA12B05197D1C4700E04030 /* GBZTutorial2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTutorial2ViewController.m; sourceTree = "<group>"; };
+		EFA12B06197D1C4700E04030 /* GBZTutorial2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZTutorial2ViewController.xib; sourceTree = "<group>"; };
+		EFA12B0B197D2B1E00E04030 /* GBZTutorialPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZTutorialPageViewController.h; sourceTree = "<group>"; };
+		EFA12B0C197D2B1E00E04030 /* GBZTutorialPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTutorialPageViewController.m; sourceTree = "<group>"; };
+		EFA12B10197D300700E04030 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../libPDtest/pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		EFA12B1F197D32B100E04030 /* randomSineWave.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = randomSineWave.pd; sourceTree = "<group>"; };
+		EFA12B21197E464200E04030 /* GBZMutableBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZMutableBodyView.h; sourceTree = "<group>"; };
+		EFA12B22197E464200E04030 /* GBZMutableBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZMutableBodyView.m; sourceTree = "<group>"; };
+		EFA12B27197E494300E04030 /* GBZEyesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZEyesView.h; sourceTree = "<group>"; };
+		EFA12B28197E494300E04030 /* GBZEyesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZEyesView.m; sourceTree = "<group>"; };
+		EFA12B2A197E6E4400E04030 /* GBZGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZGameViewController.h; sourceTree = "<group>"; };
+		EFA12B2B197E6E4400E04030 /* GBZGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZGameViewController.m; sourceTree = "<group>"; };
+		EFA12B2C197E6E4400E04030 /* GBZGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZGameViewController.xib; sourceTree = "<group>"; };
+		EFA12B2F197E73FA00E04030 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
+		EFA12B32197E77E700E04030 /* fr-fal1-2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fr-fal1-2.ttf"; sourceTree = "<group>"; };
+		EFA12B34197EE09B00E04030 /* GBZMouthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZMouthView.h; sourceTree = "<group>"; };
+		EFA12B35197EE09B00E04030 /* GBZMouthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZMouthView.m; sourceTree = "<group>"; };
+		EFA12B37197EE12A00E04030 /* GBZMechanimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZMechanimalView.h; sourceTree = "<group>"; };
+		EFA12B38197EE12A00E04030 /* GBZMechanimalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZMechanimalView.m; sourceTree = "<group>"; };
+		EFA12B3B1980029100E04030 /* GBZTutorial3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZTutorial3ViewController.h; sourceTree = "<group>"; };
+		EFA12B3C1980029100E04030 /* GBZTutorial3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTutorial3ViewController.m; sourceTree = "<group>"; };
+		EFA12B401980047700E04030 /* GBZPlanetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZPlanetView.h; sourceTree = "<group>"; };
+		EFA12B411980047700E04030 /* GBZPlanetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZPlanetView.m; sourceTree = "<group>"; };
 		EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZStartScreenViewController.h; sourceTree = "<group>"; };
 		EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZStartScreenViewController.m; sourceTree = "<group>"; };
 		EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZStartScreenViewController.xib; sourceTree = "<group>"; };
@@ -77,9 +157,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA12B1C197D30CC00E04030 /* libpd-ios.a in Frameworks */,
 				EF9B2B4A1979883F00D0D269 /* CoreGraphics.framework in Frameworks */,
 				EF9B2B4C1979883F00D0D269 /* UIKit.framework in Frameworks */,
 				EF9B2B481979883F00D0D269 /* Foundation.framework in Frameworks */,
+				D09C4003E11A4880BD357CCB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +181,13 @@
 		EF9B2B3B1979883F00D0D269 = {
 			isa = PBXGroup;
 			children = (
+				EFA12B1F197D32B100E04030 /* randomSineWave.pd */,
+				EFA12B10197D300700E04030 /* libpd.xcodeproj */,
 				EF9B2B4D1979883F00D0D269 /* Mechanimals */,
 				EF9B2B661979883F00D0D269 /* MechanimalsTests */,
 				EF9B2B461979883F00D0D269 /* Frameworks */,
 				EF9B2B451979883F00D0D269 /* Products */,
+				E5219DD647344962B0270C0A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +207,7 @@
 				EF9B2B491979883F00D0D269 /* CoreGraphics.framework */,
 				EF9B2B4B1979883F00D0D269 /* UIKit.framework */,
 				EF9B2B601979883F00D0D269 /* XCTest.framework */,
+				36BCFD314AF3457D8BEDFCCF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +222,7 @@
 				EFA12A42197ADC6800E04030 /* Utils */,
 				EFA12A4A197AF72700E04030 /* Fonts */,
 				EF9B2B591979883F00D0D269 /* Images.xcassets */,
+				EFA12B2F197E73FA00E04030 /* fondo.png */,
 				EF9B2B4E1979883F00D0D269 /* Supporting Files */,
 			);
 			path = Mechanimals;
@@ -182,20 +269,105 @@
 		EFA12A4A197AF72700E04030 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EFA12B32197E77E700E04030 /* fr-fal1-2.ttf */,
 				EFA12A46197AF72100E04030 /* Arvo-Bold.ttf */,
 				EFA12A47197AF72100E04030 /* Arvo-Regular.ttf */,
-				EFA12A4B197AF7D500E04030 /* PT Sans-Bold.ttf */,
-				EFA12A4C197AF7D500E04030 /* PT Sans-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		EFA1F849197A946700BF87CE /* Controllers */ = {
+		EFA12AF1197D138B00E04030 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12B0B197D2B1E00E04030 /* GBZTutorialPageViewController.h */,
+				EFA12B0C197D2B1E00E04030 /* GBZTutorialPageViewController.m */,
+				EFA12B3A1980006700E04030 /* Tutorial0 */,
+				EFA12B03197D146300E04030 /* Tutorial1 */,
+				EFA12B3E1980029900E04030 /* Tutorial2 */,
+				EFA12B3F198002A000E04030 /* Tutorial3 */,
+			);
+			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		EFA12AF2197D139400E04030 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12A4F197BB23200E04030 /* GBZAboutViewController.h */,
+				EFA12A50197BB23200E04030 /* GBZAboutViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		EFA12AF3197D139A00E04030 /* StartScreen */ = {
 			isa = PBXGroup;
 			children = (
 				EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */,
 				EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */,
 				EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */,
+			);
+			name = StartScreen;
+			sourceTree = "<group>";
+		};
+		EFA12B03197D146300E04030 /* Tutorial1 */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12AF4197D143C00E04030 /* GBZTutorial1ViewController.h */,
+				EFA12AF5197D143C00E04030 /* GBZTutorial1ViewController.m */,
+				EFA12AF6197D143C00E04030 /* GBZTutorial1ViewController.xib */,
+				EFA12AF9197D145900E04030 /* GBZSKStarsScene.h */,
+				EFA12AFA197D145900E04030 /* GBZSKStarsScene.m */,
+				EFA12AFD197D145900E04030 /* spark.png */,
+				EFA12AFE197D145900E04030 /* StarsParticles.sks */,
+			);
+			name = Tutorial1;
+			sourceTree = "<group>";
+		};
+		EFA12B11197D300700E04030 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12B16197D300800E04030 /* libpd-ios.a */,
+				EFA12B18197D300800E04030 /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFA12B3A1980006700E04030 /* Tutorial0 */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12AEC197D138200E04030 /* GBZTutorial0ViewController.h */,
+				EFA12AED197D138200E04030 /* GBZTutorial0ViewController.m */,
+			);
+			name = Tutorial0;
+			sourceTree = "<group>";
+		};
+		EFA12B3E1980029900E04030 /* Tutorial2 */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12B04197D1C4700E04030 /* GBZTutorial2ViewController.h */,
+				EFA12B05197D1C4700E04030 /* GBZTutorial2ViewController.m */,
+				EFA12B06197D1C4700E04030 /* GBZTutorial2ViewController.xib */,
+			);
+			name = Tutorial2;
+			sourceTree = "<group>";
+		};
+		EFA12B3F198002A000E04030 /* Tutorial3 */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12B3B1980029100E04030 /* GBZTutorial3ViewController.h */,
+				EFA12B3C1980029100E04030 /* GBZTutorial3ViewController.m */,
+			);
+			name = Tutorial3;
+			sourceTree = "<group>";
+		};
+		EFA1F849197A946700BF87CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12AF3197D139A00E04030 /* StartScreen */,
+				EFA12AF2197D139400E04030 /* About */,
+				EFA12AF1197D138B00E04030 /* Tutorial */,
+				EFA12B2A197E6E4400E04030 /* GBZGameViewController.h */,
+				EFA12B2B197E6E4400E04030 /* GBZGameViewController.m */,
+				EFA12B2C197E6E4400E04030 /* GBZGameViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -205,6 +377,18 @@
 			children = (
 				EFA1F84A197A94F700BF87CE /* GBZGearView.h */,
 				EFA1F84B197A94F700BF87CE /* GBZGearView.m */,
+				EFA12AFB197D145900E04030 /* GBZSpaceshipView.h */,
+				EFA12AFC197D145900E04030 /* GBZSpaceshipView.m */,
+				EFA12B37197EE12A00E04030 /* GBZMechanimalView.h */,
+				EFA12B38197EE12A00E04030 /* GBZMechanimalView.m */,
+				EFA12B21197E464200E04030 /* GBZMutableBodyView.h */,
+				EFA12B22197E464200E04030 /* GBZMutableBodyView.m */,
+				EFA12B27197E494300E04030 /* GBZEyesView.h */,
+				EFA12B28197E494300E04030 /* GBZEyesView.m */,
+				EFA12B34197EE09B00E04030 /* GBZMouthView.h */,
+				EFA12B35197EE09B00E04030 /* GBZMouthView.m */,
+				EFA12B401980047700E04030 /* GBZPlanetView.h */,
+				EFA12B411980047700E04030 /* GBZPlanetView.m */,
 				EFA12A43197AED2E00E04030 /* GBZGravityView.h */,
 				EFA12A44197AED2E00E04030 /* GBZGravityView.m */,
 			);
@@ -218,13 +402,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF9B2B701979883F00D0D269 /* Build configuration list for PBXNativeTarget "Mechanimals" */;
 			buildPhases = (
+				CE8B0D9C096647BA85511309 /* Check Pods Manifest.lock */,
 				EF9B2B401979883F00D0D269 /* Sources */,
 				EF9B2B411979883F00D0D269 /* Frameworks */,
 				EF9B2B421979883F00D0D269 /* Resources */,
+				9836486C477B4D9F959F1592 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EFA12B1B197D30AE00E04030 /* PBXTargetDependency */,
 			);
 			name = Mechanimals;
 			productName = Mechanimals;
@@ -274,6 +461,12 @@
 			mainGroup = EF9B2B3B1979883F00D0D269;
 			productRefGroup = EF9B2B451979883F00D0D269 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EFA12B11197D300700E04030 /* Products */;
+					ProjectRef = EFA12B10197D300700E04030 /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EF9B2B431979883F00D0D269 /* Mechanimals */,
@@ -282,18 +475,41 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		EFA12B16197D300800E04030 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = EFA12B15197D300800E04030 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFA12B18197D300800E04030 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = EFA12B17197D300800E04030 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		EF9B2B421979883F00D0D269 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA12B01197D145900E04030 /* spark.png in Resources */,
+				EFA12B33197E77E700E04030 /* fr-fal1-2.ttf in Resources */,
 				EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */,
+				EFA12B08197D1C4700E04030 /* GBZTutorial2ViewController.xib in Resources */,
 				EFA12A49197AF72100E04030 /* Arvo-Regular.ttf in Resources */,
+				EFA12B02197D145900E04030 /* StarsParticles.sks in Resources */,
+				EFA12AF8197D143C00E04030 /* GBZTutorial1ViewController.xib in Resources */,
 				EF9B2B521979883F00D0D269 /* InfoPlist.strings in Resources */,
+				EFA12B2E197E6E4400E04030 /* GBZGameViewController.xib in Resources */,
+				EFA12B30197E73FA00E04030 /* fondo.png in Resources */,
 				EF9B2B5A1979883F00D0D269 /* Images.xcassets in Resources */,
-				EFA12A4E197AF7D500E04030 /* PT Sans-Regular.ttf in Resources */,
 				EFA12A48197AF72100E04030 /* Arvo-Bold.ttf in Resources */,
-				EFA12A4D197AF7D500E04030 /* PT Sans-Bold.ttf in Resources */,
+				EFA12B20197D32B100E04030 /* randomSineWave.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,16 +523,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9836486C477B4D9F959F1592 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8B0D9C096647BA85511309 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF9B2B401979883F00D0D269 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EFA12A41197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m in Sources */,
+				EFA12B0E197D2B1E00E04030 /* GBZTutorialPageViewController.m in Sources */,
+				EFA12A52197BB23200E04030 /* GBZAboutViewController.m in Sources */,
 				EF9B2B581979883F00D0D269 /* GBZAppDelegate.m in Sources */,
+				EFA12B421980047700E04030 /* GBZPlanetView.m in Sources */,
+				EFA12B3D1980029100E04030 /* GBZTutorial3ViewController.m in Sources */,
+				EFA12B36197EE09B00E04030 /* GBZMouthView.m in Sources */,
+				EFA12B29197E494300E04030 /* GBZEyesView.m in Sources */,
+				EFA12AF7197D143C00E04030 /* GBZTutorial1ViewController.m in Sources */,
+				EFA12B23197E464200E04030 /* GBZMutableBodyView.m in Sources */,
+				EFA12B07197D1C4700E04030 /* GBZTutorial2ViewController.m in Sources */,
+				EFA12B39197EE12A00E04030 /* GBZMechanimalView.m in Sources */,
+				EFA12AFF197D145900E04030 /* GBZSKStarsScene.m in Sources */,
 				EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */,
+				EFA12B00197D145900E04030 /* GBZSpaceshipView.m in Sources */,
+				EFA12AEF197D138200E04030 /* GBZTutorial0ViewController.m in Sources */,
 				EFA12A45197AED2E00E04030 /* GBZGravityView.m in Sources */,
 				EF9B2B541979883F00D0D269 /* main.m in Sources */,
+				EFA12B2D197E6E4400E04030 /* GBZGameViewController.m in Sources */,
 				EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +599,11 @@
 			isa = PBXTargetDependency;
 			target = EF9B2B431979883F00D0D269 /* Mechanimals */;
 			targetProxy = EF9B2B641979883F00D0D269 /* PBXContainerItemProxy */;
+		};
+		EFA12B1B197D30AE00E04030 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = EFA12B1A197D30AE00E04030 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +701,7 @@
 		};
 		EF9B2B711979883F00D0D269 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5219DD647344962B0270C0A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -440,12 +709,14 @@
 				GCC_PREFIX_HEADER = "Mechanimals/Mechanimals-Prefix.pch";
 				INFOPLIST_FILE = "Mechanimals/Mechanimals-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/guardabrazo/Desktop/libPDtest/pd-for-ios/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		EF9B2B721979883F00D0D269 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5219DD647344962B0270C0A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -453,6 +724,7 @@
 				GCC_PREFIX_HEADER = "Mechanimals/Mechanimals-Prefix.pch";
 				INFOPLIST_FILE = "Mechanimals/Mechanimals-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/guardabrazo/Desktop/libPDtest/pd-for-ios/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
