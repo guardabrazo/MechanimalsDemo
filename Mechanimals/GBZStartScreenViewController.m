@@ -13,6 +13,7 @@
 #import "GBZTutorialPageViewController.h"
 #import "GBZGearView.h"
 #import "GBZGravityView.h"
+#import "GBZGameViewController.h"
 
 @interface GBZStartScreenViewController () <GearViewDelegate>
 
@@ -41,11 +42,13 @@
 
 
     dispatcher = [[PdDispatcher alloc] init]; [PdBase setDelegate:dispatcher];
-    patch = [PdBase openFile:@"randomSineWave.pd"
+    patch = [PdBase openFile:@"randomPentatonicWithShapes.pd"
                         path:[[NSBundle mainBundle] resourcePath]];
     if (!patch) {
         NSLog(@"Failed to open patch!"); // Gracefully handle failure...
     }
+    
+    
     
 }
 
@@ -131,8 +134,19 @@
 
 - (void)playButton{
 
-    GBZTutorialPageViewController *tutorialVC = [[GBZTutorialPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    [self presentViewController:tutorialVC animated:YES completion:nil];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    if ([userDefaults boolForKey:@"tutorialSeen"]) {
+        GBZGameViewController *gameVC = [[GBZGameViewController alloc]init];
+        gameVC.fireBaseManager = self.fireBaseManager;
+        [self.navigationController pushViewController:gameVC animated:YES];
+    }else{
+        GBZTutorialPageViewController *tutorialVC = [[GBZTutorialPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+        tutorialVC.fireBaseManager = self.fireBaseManager;
+        [self presentViewController:tutorialVC animated:YES completion:nil];
+    }
+    
+    
     
 }
 

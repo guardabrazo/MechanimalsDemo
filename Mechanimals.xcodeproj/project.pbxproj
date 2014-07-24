@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D09C4003E11A4880BD357CCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCFD314AF3457D8BEDFCCF /* libPods.a */; };
+		D3DAAD91F22142A7A5E3174E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCFD314AF3457D8BEDFCCF /* libPods.a */; };
 		EF9B2B481979883F00D0D269 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B471979883F00D0D269 /* Foundation.framework */; };
 		EF9B2B4A1979883F00D0D269 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B491979883F00D0D269 /* CoreGraphics.framework */; };
 		EF9B2B4C1979883F00D0D269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9B2B4B1979883F00D0D269 /* UIKit.framework */; };
@@ -36,7 +36,6 @@
 		EFA12B08197D1C4700E04030 /* GBZTutorial2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B06197D1C4700E04030 /* GBZTutorial2ViewController.xib */; };
 		EFA12B0E197D2B1E00E04030 /* GBZTutorialPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B0C197D2B1E00E04030 /* GBZTutorialPageViewController.m */; };
 		EFA12B1C197D30CC00E04030 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA12B16197D300800E04030 /* libpd-ios.a */; };
-		EFA12B20197D32B100E04030 /* randomSineWave.pd in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B1F197D32B100E04030 /* randomSineWave.pd */; };
 		EFA12B23197E464200E04030 /* GBZMutableBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B22197E464200E04030 /* GBZMutableBodyView.m */; };
 		EFA12B29197E494300E04030 /* GBZEyesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B28197E494300E04030 /* GBZEyesView.m */; };
 		EFA12B2D197E6E4400E04030 /* GBZGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B2B197E6E4400E04030 /* GBZGameViewController.m */; };
@@ -47,6 +46,13 @@
 		EFA12B39197EE12A00E04030 /* GBZMechanimalView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B38197EE12A00E04030 /* GBZMechanimalView.m */; };
 		EFA12B3D1980029100E04030 /* GBZTutorial3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B3C1980029100E04030 /* GBZTutorial3ViewController.m */; };
 		EFA12B421980047700E04030 /* GBZPlanetView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B411980047700E04030 /* GBZPlanetView.m */; };
+		EFA12B4C1981047200E04030 /* GBZFireBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B4B1981047200E04030 /* GBZFireBaseManager.m */; };
+		EFA12B5619814A0900E04030 /* randomPentatonicWithShapes.pd in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B5519814A0900E04030 /* randomPentatonicWithShapes.pd */; };
+		EFA12B5A1981515400E04030 /* GBZResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B581981515400E04030 /* GBZResetViewController.m */; };
+		EFA12B5B1981515400E04030 /* GBZResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B591981515400E04030 /* GBZResetViewController.xib */; };
+		EFA12B5E19815E2600E04030 /* GBZShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B5D19815E2600E04030 /* GBZShadow.m */; };
+		EFA12B621981943000E04030 /* GBZBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B611981943000E04030 /* GBZBubbleView.m */; };
+		EFA12B6619819A2000E04030 /* GBZAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B6519819A2000E04030 /* GBZAudioManager.m */; };
 		EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */; };
 		EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */; };
 		EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F84B197A94F700BF87CE /* GBZGearView.m */; };
@@ -127,7 +133,6 @@
 		EFA12B0B197D2B1E00E04030 /* GBZTutorialPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZTutorialPageViewController.h; sourceTree = "<group>"; };
 		EFA12B0C197D2B1E00E04030 /* GBZTutorialPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTutorialPageViewController.m; sourceTree = "<group>"; };
 		EFA12B10197D300700E04030 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../libPDtest/pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
-		EFA12B1F197D32B100E04030 /* randomSineWave.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = randomSineWave.pd; sourceTree = "<group>"; };
 		EFA12B21197E464200E04030 /* GBZMutableBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZMutableBodyView.h; sourceTree = "<group>"; };
 		EFA12B22197E464200E04030 /* GBZMutableBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZMutableBodyView.m; sourceTree = "<group>"; };
 		EFA12B27197E494300E04030 /* GBZEyesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZEyesView.h; sourceTree = "<group>"; };
@@ -145,6 +150,18 @@
 		EFA12B3C1980029100E04030 /* GBZTutorial3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTutorial3ViewController.m; sourceTree = "<group>"; };
 		EFA12B401980047700E04030 /* GBZPlanetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZPlanetView.h; sourceTree = "<group>"; };
 		EFA12B411980047700E04030 /* GBZPlanetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZPlanetView.m; sourceTree = "<group>"; };
+		EFA12B4A1981047200E04030 /* GBZFireBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZFireBaseManager.h; sourceTree = "<group>"; };
+		EFA12B4B1981047200E04030 /* GBZFireBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZFireBaseManager.m; sourceTree = "<group>"; };
+		EFA12B5519814A0900E04030 /* randomPentatonicWithShapes.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = randomPentatonicWithShapes.pd; sourceTree = "<group>"; };
+		EFA12B571981515400E04030 /* GBZResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZResetViewController.h; sourceTree = "<group>"; };
+		EFA12B581981515400E04030 /* GBZResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZResetViewController.m; sourceTree = "<group>"; };
+		EFA12B591981515400E04030 /* GBZResetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZResetViewController.xib; sourceTree = "<group>"; };
+		EFA12B5C19815E2600E04030 /* GBZShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZShadow.h; sourceTree = "<group>"; };
+		EFA12B5D19815E2600E04030 /* GBZShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZShadow.m; sourceTree = "<group>"; };
+		EFA12B601981943000E04030 /* GBZBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZBubbleView.h; sourceTree = "<group>"; };
+		EFA12B611981943000E04030 /* GBZBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZBubbleView.m; sourceTree = "<group>"; };
+		EFA12B6419819A2000E04030 /* GBZAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZAudioManager.h; sourceTree = "<group>"; };
+		EFA12B6519819A2000E04030 /* GBZAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZAudioManager.m; sourceTree = "<group>"; };
 		EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZStartScreenViewController.h; sourceTree = "<group>"; };
 		EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZStartScreenViewController.m; sourceTree = "<group>"; };
 		EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZStartScreenViewController.xib; sourceTree = "<group>"; };
@@ -161,7 +178,7 @@
 				EF9B2B4A1979883F00D0D269 /* CoreGraphics.framework in Frameworks */,
 				EF9B2B4C1979883F00D0D269 /* UIKit.framework in Frameworks */,
 				EF9B2B481979883F00D0D269 /* Foundation.framework in Frameworks */,
-				D09C4003E11A4880BD357CCB /* libPods.a in Frameworks */,
+				D3DAAD91F22142A7A5E3174E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +198,7 @@
 		EF9B2B3B1979883F00D0D269 = {
 			isa = PBXGroup;
 			children = (
-				EFA12B1F197D32B100E04030 /* randomSineWave.pd */,
+				EFA12B5519814A0900E04030 /* randomPentatonicWithShapes.pd */,
 				EFA12B10197D300700E04030 /* libpd.xcodeproj */,
 				EF9B2B4D1979883F00D0D269 /* Mechanimals */,
 				EF9B2B661979883F00D0D269 /* MechanimalsTests */,
@@ -219,6 +236,7 @@
 				EF9B2B571979883F00D0D269 /* GBZAppDelegate.m */,
 				EFA1F849197A946700BF87CE /* Controllers */,
 				EFA1F84D197A950300BF87CE /* Views */,
+				EFA12B4E1981047700E04030 /* Services */,
 				EFA12A42197ADC6800E04030 /* Utils */,
 				EFA12A4A197AF72700E04030 /* Fonts */,
 				EF9B2B591979883F00D0D269 /* Images.xcassets */,
@@ -262,6 +280,8 @@
 			children = (
 				EFA12A3F197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.h */,
 				EFA12A40197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m */,
+				EFA12B6419819A2000E04030 /* GBZAudioManager.h */,
+				EFA12B6519819A2000E04030 /* GBZAudioManager.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -294,6 +314,9 @@
 			children = (
 				EFA12A4F197BB23200E04030 /* GBZAboutViewController.h */,
 				EFA12A50197BB23200E04030 /* GBZAboutViewController.m */,
+				EFA12B571981515400E04030 /* GBZResetViewController.h */,
+				EFA12B581981515400E04030 /* GBZResetViewController.m */,
+				EFA12B591981515400E04030 /* GBZResetViewController.xib */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -359,6 +382,15 @@
 			name = Tutorial3;
 			sourceTree = "<group>";
 		};
+		EFA12B4E1981047700E04030 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12B4A1981047200E04030 /* GBZFireBaseManager.h */,
+				EFA12B4B1981047200E04030 /* GBZFireBaseManager.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		EFA1F849197A946700BF87CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,10 +419,14 @@
 				EFA12B28197E494300E04030 /* GBZEyesView.m */,
 				EFA12B34197EE09B00E04030 /* GBZMouthView.h */,
 				EFA12B35197EE09B00E04030 /* GBZMouthView.m */,
+				EFA12B5C19815E2600E04030 /* GBZShadow.h */,
+				EFA12B5D19815E2600E04030 /* GBZShadow.m */,
 				EFA12B401980047700E04030 /* GBZPlanetView.h */,
 				EFA12B411980047700E04030 /* GBZPlanetView.m */,
 				EFA12A43197AED2E00E04030 /* GBZGravityView.h */,
 				EFA12A44197AED2E00E04030 /* GBZGravityView.m */,
+				EFA12B601981943000E04030 /* GBZBubbleView.h */,
+				EFA12B611981943000E04030 /* GBZBubbleView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -500,6 +536,8 @@
 				EFA12B01197D145900E04030 /* spark.png in Resources */,
 				EFA12B33197E77E700E04030 /* fr-fal1-2.ttf in Resources */,
 				EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */,
+				EFA12B5619814A0900E04030 /* randomPentatonicWithShapes.pd in Resources */,
+				EFA12B5B1981515400E04030 /* GBZResetViewController.xib in Resources */,
 				EFA12B08197D1C4700E04030 /* GBZTutorial2ViewController.xib in Resources */,
 				EFA12A49197AF72100E04030 /* Arvo-Regular.ttf in Resources */,
 				EFA12B02197D145900E04030 /* StarsParticles.sks in Resources */,
@@ -509,7 +547,6 @@
 				EFA12B30197E73FA00E04030 /* fondo.png in Resources */,
 				EF9B2B5A1979883F00D0D269 /* Images.xcassets in Resources */,
 				EFA12A48197AF72100E04030 /* Arvo-Bold.ttf in Resources */,
-				EFA12B20197D32B100E04030 /* randomSineWave.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,10 +601,13 @@
 				EFA12A41197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m in Sources */,
 				EFA12B0E197D2B1E00E04030 /* GBZTutorialPageViewController.m in Sources */,
 				EFA12A52197BB23200E04030 /* GBZAboutViewController.m in Sources */,
+				EFA12B5E19815E2600E04030 /* GBZShadow.m in Sources */,
+				EFA12B621981943000E04030 /* GBZBubbleView.m in Sources */,
 				EF9B2B581979883F00D0D269 /* GBZAppDelegate.m in Sources */,
 				EFA12B421980047700E04030 /* GBZPlanetView.m in Sources */,
 				EFA12B3D1980029100E04030 /* GBZTutorial3ViewController.m in Sources */,
 				EFA12B36197EE09B00E04030 /* GBZMouthView.m in Sources */,
+				EFA12B6619819A2000E04030 /* GBZAudioManager.m in Sources */,
 				EFA12B29197E494300E04030 /* GBZEyesView.m in Sources */,
 				EFA12AF7197D143C00E04030 /* GBZTutorial1ViewController.m in Sources */,
 				EFA12B23197E464200E04030 /* GBZMutableBodyView.m in Sources */,
@@ -575,12 +615,14 @@
 				EFA12B39197EE12A00E04030 /* GBZMechanimalView.m in Sources */,
 				EFA12AFF197D145900E04030 /* GBZSKStarsScene.m in Sources */,
 				EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */,
+				EFA12B5A1981515400E04030 /* GBZResetViewController.m in Sources */,
 				EFA12B00197D145900E04030 /* GBZSpaceshipView.m in Sources */,
 				EFA12AEF197D138200E04030 /* GBZTutorial0ViewController.m in Sources */,
 				EFA12A45197AED2E00E04030 /* GBZGravityView.m in Sources */,
 				EF9B2B541979883F00D0D269 /* main.m in Sources */,
 				EFA12B2D197E6E4400E04030 /* GBZGameViewController.m in Sources */,
 				EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */,
+				EFA12B4C1981047200E04030 /* GBZFireBaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

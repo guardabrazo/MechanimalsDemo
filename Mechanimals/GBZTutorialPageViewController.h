@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GBZFireBaseManager.h"
 
 @interface GBZTutorialPageViewController : UIPageViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+
+@property GBZFireBaseManager *fireBaseManager;
 
 @end

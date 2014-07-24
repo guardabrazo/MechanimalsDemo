@@ -10,26 +10,35 @@
 
 #import "GBZGameViewController.h"
 #import "GBZMechanimalView.h"
+#import "GBZShadow.h"
 
 @interface GBZGameViewController () <UITextFieldDelegate, GearViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UILabel *playersLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
 
 @property (strong, nonatomic) NSMutableAttributedString *string;
 
 @property (strong, nonatomic) GBZMechanimalView *mechanimal;
+@property (strong, nonatomic) GBZShadow *shadow;
 
 @end
 
 @implementation GBZGameViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [self.fireBaseManager addObserver:self forKeyPath:@"numberOfPlayers" options:NSKeyValueObservingOptionNew context:NULL];
+    
+    [self updateLabel];
+}
+- (void)observeValueForKeyPath:(NSString*)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void*)context{
+    
+    if ([keyPath isEqual:@"numberOfPlayers"]) {
+        [self updateLabel];
     }
-    return self;
 }
 
 - (void)viewDidLoad
@@ -53,7 +62,16 @@
     
     self.mechanimal = [[GBZMechanimalView alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame)-200, 300, 400, 400)];
     [self.view addSubview:self.mechanimal];
+    
+    self.shadow = [[GBZShadow alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame)-200, 710, 400, 30)];
+    [self.view addSubview:self.shadow];
+
     self.mechanimal.gearView.delegate = self;
+    
+    self.menuButton.titleLabel.font = [UIFont fontWithName:@"Arvo-Bold" size:50];
+    [self.menuButton setTitleColor:[UIColor colorWithRed: 0.985 green: 0.761 blue: 0.37 alpha: 1] forState:UIControlStateNormal];
+    [self.menuButton addTarget:self action:@selector(goToMenu) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 -(void)finishedRotating{
@@ -82,6 +100,8 @@
                         [self.textField setAttributedText:self.string];
                     }
                     completion:nil];
+    
+  
 }
 
 
@@ -118,5 +138,14 @@
     return newLength <= MAXLENGHT || returnKey;
 }
 
+-(void)updateLabel{
+    
+    self.playersLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.fireBaseManager.numberOfPlayers];
+}
+
+-(void)goToMenu{
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 @end

@@ -44,10 +44,8 @@
 
     self.eyes = [[GBZEyesView alloc]initWithFrame:CGRectMake(50, 260, 300, 55)];
     
-  
-        self.mouth = [[GBZMouthView alloc]initWithFrame:CGRectMake(175, 345, 60, 35)];
+    self.mouth = [[GBZMouthView alloc]initWithFrame:CGRectMake(175, 345, 60, 35)];
 
-    
     
     [self addSubview:body];
     [self addSubview:self.gearView];

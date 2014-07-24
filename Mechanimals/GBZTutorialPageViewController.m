@@ -46,6 +46,7 @@
         GBZTutorial1ViewController *tutorial1 = [[GBZTutorial1ViewController alloc]init];
         GBZTutorial2ViewController *tutorial2 = [[GBZTutorial2ViewController alloc]init];
         GBZTutorial3ViewController *tutorial3 = [[GBZTutorial3ViewController alloc]init];
+        tutorial3.fireBaseManager = self.fireBaseManager;
         _pages = @[tutorial0, tutorial1, tutorial2, tutorial3];
     }
     return _pages;

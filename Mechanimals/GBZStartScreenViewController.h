@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "PdDispatcher.h"
+#import "GBZFireBaseManager.h"
 
 @interface GBZStartScreenViewController : UIViewController{
 
+    
 PdDispatcher *dispatcher;
 void *patch;
     
 }
+
+@property GBZFireBaseManager *fireBaseManager;
 
 @end
