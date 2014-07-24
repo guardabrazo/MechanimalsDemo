@@ -10,4 +10,6 @@
 
 @interface GBZEyesView : UIView
 
+@property (assign) BOOL gearRotating;
+
 @end

@@ -64,6 +64,10 @@
     }
 }
 
+-(void)isRotating{
+    
+}
+
 #pragma mark - Private Methods
 
 - (void)showGearViewWithGravity

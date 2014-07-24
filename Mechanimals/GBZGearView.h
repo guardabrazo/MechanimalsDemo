@@ -10,14 +10,15 @@
 
 @protocol GearViewDelegate <NSObject>
 
--(void)didRotate;
+@optional
+- (void)didRotate;
+- (void)isRotating;
+- (void)finishedRotating;
 
 @end
 
 @interface GBZGearView : UIView
 
 @property (nonatomic, weak) id<GearViewDelegate> delegate;
-
-@property (weak, nonatomic) id<UICollisionBehaviorDelegate> collisionDelegate;
 
 @end

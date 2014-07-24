@@ -10,4 +10,6 @@
 
 @interface GBZMouthView : UIView
 
+@property (assign) BOOL gearRotating;
+
 @end

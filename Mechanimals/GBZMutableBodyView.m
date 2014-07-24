@@ -20,6 +20,7 @@
         [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
         
         self.layer.masksToBounds = YES;
+        self.layer.cornerRadius = self.bounds.size.height/2;
         self.backgroundColor = [UIColor clearColor];
     }
     return self;
@@ -65,12 +66,12 @@
     springAnimation.property = [POPAnimatableProperty propertyWithName:kPOPLayerCornerRadius];
     
     if (!toggle) {
-        springAnimation.toValue =  @(self.bounds.size.height/2);
+        springAnimation.toValue =  @(80);
         springAnimation.springBounciness = 10;
         toggle = !toggle;
         
     }else{
-        springAnimation.toValue =  @(80);
+        springAnimation.toValue =  @(self.bounds.size.height/2);
         springAnimation.springBounciness = 10;
         toggle = !toggle;
     }

@@ -39,6 +39,10 @@
 
 - (void)rotation:(CGFloat)angle{
     
+    if ([self.delegate respondsToSelector:@selector(isRotating)]) {
+        [self.delegate isRotating];
+
+    }
     // calculate rotation angle
     self.gearAngle += angle;
     
@@ -54,7 +58,10 @@
     self.transform = CGAffineTransformMakeRotation(self.gearAngle *  M_PI / 180);
     
     if (self.gearAngle > 45) {
-        [self.delegate didRotate];
+        
+        if ([self.delegate respondsToSelector:@selector(didRotate)]) {
+            [self.delegate didRotate];
+        }
         
         self.gearAngle = 0;
     }
@@ -198,6 +205,10 @@
                      } completion:^(BOOL finished) {
                          self.gearAngle = 0;
                          self.userInteractionEnabled = YES;
+                         
+                         if ([self.delegate respondsToSelector:@selector(finishedRotating)]) {
+                             [self.delegate finishedRotating];
+                         }
                      }];
 }
 

@@ -8,9 +8,12 @@
 
 #import "GBZMechanimalView.h"
 #import "GBZMutableBodyView.h"
-#import "GBZGearView.h"
-#import "GBZEyesView.h"
-#import "GBZMouthView.h"
+
+@interface GBZMechanimalView () <GearViewDelegate>
+
+@property (assign) BOOL gearRotating;
+
+@end
 
 @implementation GBZMechanimalView
 
@@ -26,23 +29,30 @@
         self.backgroundColor = [UIColor clearColor];
         
         [self assembleMechanimal];
-      
+
         [self animateMechanimal];
     }
     return self;
 }
 
+
+
 - (void) assembleMechanimal{
     
     GBZMutableBodyView *body = [[GBZMutableBodyView alloc]initWithFrame:CGRectMake(0, 0, 400, 400)];
-    GBZGearView *gear = [[GBZGearView alloc]initWithFrame:CGRectMake(180, -50, 285, 285)];
-    GBZEyesView *eyes = [[GBZEyesView alloc]initWithFrame:CGRectMake(50, 260, 300, 55)];
-    GBZMouthView *mouth = [[GBZMouthView alloc]initWithFrame:CGRectMake(175, 345, 60, 35)];
+    self.gearView = [[GBZGearView alloc]initWithFrame:CGRectMake(180, -50, 285, 285)];
+
+    self.eyes = [[GBZEyesView alloc]initWithFrame:CGRectMake(50, 260, 300, 55)];
+    
+  
+        self.mouth = [[GBZMouthView alloc]initWithFrame:CGRectMake(175, 345, 60, 35)];
+
+    
     
     [self addSubview:body];
-    [self addSubview:gear];
-    [self addSubview:eyes];
-    [self addSubview:mouth];
+    [self addSubview:self.gearView];
+    [self addSubview:self.eyes];
+    [self addSubview:self.mouth];
 }
 
 - (void)animateMechanimal{

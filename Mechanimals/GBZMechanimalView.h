@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GBZGearView.h"
+#import "GBZMouthView.h"
+#import "GBZEyesView.h"
 
 @interface GBZMechanimalView : UIView
+
+@property (strong, nonatomic) GBZGearView *gearView;
+@property (strong, nonatomic) GBZMouthView *mouth;
+@property (strong, nonatomic) GBZEyesView *eyes;
 
 @end
