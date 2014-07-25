@@ -10,4 +10,27 @@
 
 @implementation GBZAudioManager
 
++ (instancetype)sharedAudioManager{
+    
+    static dispatch_once_t once;
+    static id sharedAudioManager;
+    dispatch_once(&once, ^{
+        sharedAudioManager = [[self alloc] init];
+    });
+    return sharedAudioManager;
+}
+
+- (id)init {
+    if (self = [super init]) {
+        
+        dispatcher = [[PdDispatcher alloc] init]; [PdBase setDelegate:dispatcher];
+        patch = [PdBase openFile:@"randomPentatonicWithShapes.pd"
+                            path:[[NSBundle mainBundle] resourcePath]];
+        if (!patch) {
+            NSLog(@"Failed to open patch!");
+        }
+    }
+    return self;
+}
+
 @end

@@ -10,6 +10,7 @@
 
 @interface GBZGravityView : UIView
 
+@property (strong, nonatomic) UIGravityBehavior *gravityBehavior;
 
 - (id)initWithFrame:(CGRect)frame view:(UIView *)view reversed:(BOOL)reversed;
 

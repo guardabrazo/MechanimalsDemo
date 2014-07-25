@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PdDispatcher.h"
 
-@interface GBZAudioManager : NSObject
+@interface GBZAudioManager : NSObject{
+
+    PdDispatcher *dispatcher;
+    void *patch;
+}
+
++ (instancetype)sharedAudioManager;
 
 @end

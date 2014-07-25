@@ -82,16 +82,13 @@
 }
 
 - (void)resetButton{
-    NSLog(@"RESET");
     [self displayResetConfirmation];
 }
 
 - (void)displayResetConfirmation{
+    
     GBZResetViewController *resetVC = [[GBZResetViewController alloc]init];
-    
     [self presentViewController:resetVC animated:YES completion:nil];
-    
-
 }
 
 @end

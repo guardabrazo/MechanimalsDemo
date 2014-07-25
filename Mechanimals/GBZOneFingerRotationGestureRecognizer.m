@@ -79,7 +79,7 @@ CGFloat angleBetweenLinesInDegrees(CGPoint beginLineA,
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     
     [super touchesMoved:touches withEvent:event];
-    
+        
     if (self.state == UIGestureRecognizerStateFailed){
      return;
     }
@@ -150,6 +150,10 @@ CGFloat angleBetweenLinesInDegrees(CGPoint beginLineA,
 
     self.state = UIGestureRecognizerStateFailed;
     cumulatedAngle = 0;
+    if ([target respondsToSelector: @selector(finalAngle:)]){
+        
+        [target finalAngle:cumulatedAngle];
+    }
 }
 
 

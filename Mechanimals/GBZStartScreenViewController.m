@@ -14,6 +14,7 @@
 #import "GBZGearView.h"
 #import "GBZGravityView.h"
 #import "GBZGameViewController.h"
+#import "GBZAudioManager.h"
 
 @interface GBZStartScreenViewController () <GearViewDelegate>
 
@@ -36,20 +37,11 @@
     
     [super viewDidLoad];
     
+    [GBZAudioManager sharedAudioManager];
+    
     self.gearView.delegate = self;
     
     [self performSelector:@selector(showGearViewWithGravity) withObject:self afterDelay:0.5];
-
-
-    dispatcher = [[PdDispatcher alloc] init]; [PdBase setDelegate:dispatcher];
-    patch = [PdBase openFile:@"randomPentatonicWithShapes.pd"
-                        path:[[NSBundle mainBundle] resourcePath]];
-    if (!patch) {
-        NSLog(@"Failed to open patch!"); // Gracefully handle failure...
-    }
-    
-    
-    
 }
 
 
@@ -65,10 +57,6 @@
         [self showTitleLabelWithGravity];
         [self showMenuItems];
     }
-}
-
--(void)isRotating{
-    
 }
 
 #pragma mark - Private Methods
@@ -145,9 +133,6 @@
         tutorialVC.fireBaseManager = self.fireBaseManager;
         [self presentViewController:tutorialVC animated:YES completion:nil];
     }
-    
-    
-    
 }
 
 

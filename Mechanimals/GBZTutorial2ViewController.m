@@ -77,7 +77,7 @@
 
 -(void)drawLabel{
     
-    UILabel *textLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 470, 400, 300)];
+    UILabel *textLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 520, 400, 300)];
     textLabel.font = [UIFont fontWithName:@"Arvo-Bold" size:25];
     textLabel.numberOfLines = -1;
     

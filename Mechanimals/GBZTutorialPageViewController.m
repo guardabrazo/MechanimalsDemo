@@ -17,7 +17,6 @@
 
 @property (strong, nonatomic) NSArray *pages;
 
-
 @end
 
 @implementation GBZTutorialPageViewController
@@ -28,7 +27,6 @@
     
     self.delegate = self;
     self.dataSource = self;
-//    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height+40);
     
     GBZTutorial0ViewController *initialViewController = [self.pages firstObject];
     
@@ -84,18 +82,16 @@
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    // The number of items reflected in the page indicator.
-  
     
     return self.pages.count;
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    // The selected item reflected in the page indicator.
     return 0;
 }
 
 -(void)viewDidLayoutSubviews {
+    
     UIView *view = self.view;
     NSArray *subviews = view.subviews;
     if( [subviews count] == 2 ) {

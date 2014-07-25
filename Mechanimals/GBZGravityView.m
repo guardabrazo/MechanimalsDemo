@@ -14,7 +14,6 @@
 @property (strong, nonatomic) UIView *viewWithGravity;
 @property (strong, nonatomic) UIDynamicAnimator *animator;
 @property (strong, nonatomic) UIView *referenceView;
-@property (strong, nonatomic) UIGravityBehavior *gravityBehavior;
 @property (assign, nonatomic) CGVector gravityVector;
 @property (strong, nonatomic) UICollisionBehavior *collisionBehavior;
 

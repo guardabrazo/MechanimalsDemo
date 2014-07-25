@@ -39,18 +39,24 @@
 
 - (void) assembleMechanimal{
     
-    GBZMutableBodyView *body = [[GBZMutableBodyView alloc]initWithFrame:CGRectMake(0, 0, 400, 400)];
-    self.gearView = [[GBZGearView alloc]initWithFrame:CGRectMake(180, -50, 285, 285)];
-
-    self.eyes = [[GBZEyesView alloc]initWithFrame:CGRectMake(50, 260, 300, 55)];
     
-    self.mouth = [[GBZMouthView alloc]initWithFrame:CGRectMake(175, 345, 60, 35)];
+    UIView *containerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 470, 470)];
+    containerView.backgroundColor = [UIColor clearColor];
+    
+    GBZMutableBodyView *body = [[GBZMutableBodyView alloc]initWithFrame:CGRectMake(0, 0+70, 400, 400)];
+    self.gearView = [[GBZGearView alloc]initWithFrame:CGRectMake(180, -50+70, 285, 285)];
+
+    self.eyes = [[GBZEyesView alloc]initWithFrame:CGRectMake(50, 260+70, 300, 55)];
+    
+    self.mouth = [[GBZMouthView alloc]initWithFrame:CGRectMake(175, 345+70, 60, 35)];
 
     
-    [self addSubview:body];
-    [self addSubview:self.gearView];
-    [self addSubview:self.eyes];
-    [self addSubview:self.mouth];
+    [containerView addSubview:body];
+    [containerView addSubview:self.eyes];
+    [containerView addSubview:self.mouth];
+    [containerView addSubview:self.gearView];
+    [self addSubview:containerView];
+
 }
 
 - (void)animateMechanimal{

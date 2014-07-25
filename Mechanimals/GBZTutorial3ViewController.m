@@ -27,13 +27,13 @@
     [super viewWillAppear:animated];
     
     if (!self.mechanimal) {
-        self.mechanimal = [[GBZMechanimalView alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame)-75, 300, 400, 400)];
+        self.mechanimal = [[GBZMechanimalView alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame)-75, 300-70, 400, 400)];
     }
     
     self.mechanimal.gearView.userInteractionEnabled = NO;
     self.mechanimal.eyes.gearRotating = YES;
     self.mechanimal.mouth.gearRotating = YES;
-    self.mechanimal.mouth.frame =  CGRectMake(175, 305, 60, 60);
+    self.mechanimal.mouth.frame =  CGRectMake(172, 305+70, 60, 60);
     
     
     [self.view addSubview:self.mechanimal];
@@ -65,7 +65,7 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor colorWithRed: 0.969 green: 0.911 blue: 0.729 alpha: 1];
-    UIButton *gameButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width, 650, 200, 100)];
+    UIButton *gameButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.bounds.size.width+20, 650, 200, 100)];
     [gameButton addTarget:self action:@selector(goToGame) forControlEvents:UIControlEventTouchUpInside];
    
     [gameButton setTitle:@"PLAY" forState:UIControlStateNormal];
@@ -75,6 +75,15 @@
     [gameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     
     [self.view addSubview:gameButton];
+    
+    
+    UILabel *textLabel = [[UILabel alloc]initWithFrame:CGRectMake(120, 40, 800, 100)];
+    textLabel.text = @"HELP  THE  MOTHERSHIP  FIND  THEM  WRITING  MESSAGES  AND  TRANSLATING  THEM  WITH  THEIR  COMMUNICATION  GEAR";
+    textLabel.font =[UIFont fontWithName:@"Arvo-Bold" size:25];
+    textLabel.numberOfLines = 5;
+    textLabel.textAlignment = NSTextAlignmentCenter;
+    textLabel.textColor = [UIColor colorWithRed: 0.985 green: 0.761 blue: 0.37 alpha: 1];
+    [self.view addSubview:textLabel];
     
     
     

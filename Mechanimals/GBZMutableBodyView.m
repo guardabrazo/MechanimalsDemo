@@ -8,6 +8,7 @@
 
 #import "GBZMutableBodyView.h"
 #import <POP/POP.h>
+#import "GBZAudioManager.h"
 
 @implementation GBZMutableBodyView
 
@@ -22,6 +23,8 @@
         self.layer.masksToBounds = YES;
         self.layer.cornerRadius = self.bounds.size.height/2;
         self.backgroundColor = [UIColor clearColor];
+        
+        [GBZAudioManager sharedAudioManager];
     }
     return self;
 }
@@ -68,12 +71,15 @@
     if (!toggle) {
         springAnimation.toValue =  @(80);
         springAnimation.springBounciness = 10;
+        [PdBase sendFloat:0 toReceiver:@"waveShape"];
         toggle = !toggle;
         
     }else{
         springAnimation.toValue =  @(self.bounds.size.height/2);
         springAnimation.springBounciness = 10;
+        [PdBase sendFloat:1 toReceiver:@"waveShape"];
         toggle = !toggle;
+
     }
     springAnimation.velocity = @(10);
 //    springAnimation.springBounciness = 20;

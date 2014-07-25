@@ -53,6 +53,10 @@
 		EFA12B5E19815E2600E04030 /* GBZShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B5D19815E2600E04030 /* GBZShadow.m */; };
 		EFA12B621981943000E04030 /* GBZBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B611981943000E04030 /* GBZBubbleView.m */; };
 		EFA12B6619819A2000E04030 /* GBZAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B6519819A2000E04030 /* GBZAudioManager.m */; };
+		EFA12B6F1981C9D200E04030 /* GBZTryAgainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA12B6D1981C9D200E04030 /* GBZTryAgainViewController.m */; };
+		EFA12B701981C9D200E04030 /* GBZTryAgainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B6E1981C9D200E04030 /* GBZTryAgainViewController.xib */; };
+		EFA12B7F1981F2FF00E04030 /* mountains2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B7E1981F2FF00E04030 /* mountains2.png */; };
+		EFA12B811981F47100E04030 /* mountains1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA12B801981F47100E04030 /* mountains1.png */; };
 		EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */; };
 		EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */; };
 		EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F84B197A94F700BF87CE /* GBZGearView.m */; };
@@ -162,6 +166,11 @@
 		EFA12B611981943000E04030 /* GBZBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZBubbleView.m; sourceTree = "<group>"; };
 		EFA12B6419819A2000E04030 /* GBZAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZAudioManager.h; sourceTree = "<group>"; };
 		EFA12B6519819A2000E04030 /* GBZAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZAudioManager.m; sourceTree = "<group>"; };
+		EFA12B6C1981C9D100E04030 /* GBZTryAgainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZTryAgainViewController.h; sourceTree = "<group>"; };
+		EFA12B6D1981C9D200E04030 /* GBZTryAgainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZTryAgainViewController.m; sourceTree = "<group>"; };
+		EFA12B6E1981C9D200E04030 /* GBZTryAgainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZTryAgainViewController.xib; sourceTree = "<group>"; };
+		EFA12B7E1981F2FF00E04030 /* mountains2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains2.png; sourceTree = "<group>"; };
+		EFA12B801981F47100E04030 /* mountains1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains1.png; sourceTree = "<group>"; };
 		EFA1F844197A945F00BF87CE /* GBZStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZStartScreenViewController.h; sourceTree = "<group>"; };
 		EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZStartScreenViewController.m; sourceTree = "<group>"; };
 		EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZStartScreenViewController.xib; sourceTree = "<group>"; };
@@ -241,6 +250,8 @@
 				EFA12A4A197AF72700E04030 /* Fonts */,
 				EF9B2B591979883F00D0D269 /* Images.xcassets */,
 				EFA12B2F197E73FA00E04030 /* fondo.png */,
+				EFA12B801981F47100E04030 /* mountains1.png */,
+				EFA12B7E1981F2FF00E04030 /* mountains2.png */,
 				EF9B2B4E1979883F00D0D269 /* Supporting Files */,
 			);
 			path = Mechanimals;
@@ -391,15 +402,26 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		EFA12B711981D1EC00E04030 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				EFA12B2A197E6E4400E04030 /* GBZGameViewController.h */,
+				EFA12B2B197E6E4400E04030 /* GBZGameViewController.m */,
+				EFA12B2C197E6E4400E04030 /* GBZGameViewController.xib */,
+				EFA12B6C1981C9D100E04030 /* GBZTryAgainViewController.h */,
+				EFA12B6D1981C9D200E04030 /* GBZTryAgainViewController.m */,
+				EFA12B6E1981C9D200E04030 /* GBZTryAgainViewController.xib */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
 		EFA1F849197A946700BF87CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				EFA12AF3197D139A00E04030 /* StartScreen */,
 				EFA12AF2197D139400E04030 /* About */,
 				EFA12AF1197D138B00E04030 /* Tutorial */,
-				EFA12B2A197E6E4400E04030 /* GBZGameViewController.h */,
-				EFA12B2B197E6E4400E04030 /* GBZGameViewController.m */,
-				EFA12B2C197E6E4400E04030 /* GBZGameViewController.xib */,
+				EFA12B711981D1EC00E04030 /* Game */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -534,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA12B01197D145900E04030 /* spark.png in Resources */,
+				EFA12B7F1981F2FF00E04030 /* mountains2.png in Resources */,
 				EFA12B33197E77E700E04030 /* fr-fal1-2.ttf in Resources */,
 				EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */,
 				EFA12B5619814A0900E04030 /* randomPentatonicWithShapes.pd in Resources */,
@@ -543,8 +566,10 @@
 				EFA12B02197D145900E04030 /* StarsParticles.sks in Resources */,
 				EFA12AF8197D143C00E04030 /* GBZTutorial1ViewController.xib in Resources */,
 				EF9B2B521979883F00D0D269 /* InfoPlist.strings in Resources */,
+				EFA12B701981C9D200E04030 /* GBZTryAgainViewController.xib in Resources */,
 				EFA12B2E197E6E4400E04030 /* GBZGameViewController.xib in Resources */,
 				EFA12B30197E73FA00E04030 /* fondo.png in Resources */,
+				EFA12B811981F47100E04030 /* mountains1.png in Resources */,
 				EF9B2B5A1979883F00D0D269 /* Images.xcassets in Resources */,
 				EFA12A48197AF72100E04030 /* Arvo-Bold.ttf in Resources */,
 			);
@@ -609,6 +634,7 @@
 				EFA12B36197EE09B00E04030 /* GBZMouthView.m in Sources */,
 				EFA12B6619819A2000E04030 /* GBZAudioManager.m in Sources */,
 				EFA12B29197E494300E04030 /* GBZEyesView.m in Sources */,
+				EFA12B6F1981C9D200E04030 /* GBZTryAgainViewController.m in Sources */,
 				EFA12AF7197D143C00E04030 /* GBZTutorial1ViewController.m in Sources */,
 				EFA12B23197E464200E04030 /* GBZMutableBodyView.m in Sources */,
 				EFA12B07197D1C4700E04030 /* GBZTutorial2ViewController.m in Sources */,
