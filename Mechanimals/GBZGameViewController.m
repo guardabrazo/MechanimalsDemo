@@ -202,7 +202,6 @@
 
 #pragma mark - Animations
 
-
 - (void)animateTextField{
     
     [UIView animateWithDuration:1

@@ -60,6 +60,7 @@
 		EFA1F847197A945F00BF87CE /* GBZStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F845197A945F00BF87CE /* GBZStartScreenViewController.m */; };
 		EFA1F848197A945F00BF87CE /* GBZStartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */; };
 		EFA1F84C197A94F700BF87CE /* GBZGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1F84B197A94F700BF87CE /* GBZGearView.m */; };
+		EFEF5344199A0D5B0094B2E3 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = EFEF5343199A0D5B0094B2E3 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +177,7 @@
 		EFA1F846197A945F00BF87CE /* GBZStartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBZStartScreenViewController.xib; sourceTree = "<group>"; };
 		EFA1F84A197A94F700BF87CE /* GBZGearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBZGearView.h; sourceTree = "<group>"; };
 		EFA1F84B197A94F700BF87CE /* GBZGearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBZGearView.m; sourceTree = "<group>"; };
+		EFEF5343199A0D5B0094B2E3 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 		EF9B2B3B1979883F00D0D269 = {
 			isa = PBXGroup;
 			children = (
+				EFEF5343199A0D5B0094B2E3 /* readme.md */,
 				EFA12B5519814A0900E04030 /* randomPentatonicWithShapes.pd */,
 				EFA12B10197D300700E04030 /* libpd.xcodeproj */,
 				EF9B2B4D1979883F00D0D269 /* Mechanimals */,
@@ -624,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA12A41197ADC6300E04030 /* GBZOneFingerRotationGestureRecognizer.m in Sources */,
+				EFEF5344199A0D5B0094B2E3 /* readme.md in Sources */,
 				EFA12B0E197D2B1E00E04030 /* GBZTutorialPageViewController.m in Sources */,
 				EFA12A52197BB23200E04030 /* GBZAboutViewController.m in Sources */,
 				EFA12B5E19815E2600E04030 /* GBZShadow.m in Sources */,
@@ -773,10 +777,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mechanimals/Mechanimals-Prefix.pch";
 				INFOPLIST_FILE = "Mechanimals/Mechanimals-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "/Users/guardabrazo/Desktop/libPDtest/pd-for-ios/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -788,10 +794,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mechanimals/Mechanimals-Prefix.pch";
 				INFOPLIST_FILE = "Mechanimals/Mechanimals-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "/Users/guardabrazo/Desktop/libPDtest/pd-for-ios/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
